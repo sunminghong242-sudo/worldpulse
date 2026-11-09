@@ -124,7 +124,7 @@ def short_summary(title,headline,description):
 def add_editorial_fields(items):
     # Fetch a modest number of publisher snippets in parallel to limit load.
     with ThreadPoolExecutor(max_workers=6) as pool:
-        selected=items[:65]
+        selected=[x for x in items if x.get("source_type")!="social_trend"][:40]
         descriptions=list(pool.map(lambda x:get_publisher_description(x["url"]),selected))
     by_id={x["id"]:descriptions[i] for i,x in enumerate(selected)}
     for item in items:
@@ -200,12 +200,12 @@ def fetch_douyin(now):
     words=p.text
     results=[]
     for idx,x in enumerate(words):
-        m=re.fullmatch(r"(\\d{1,2})\\.",x)
+        m=re.fullmatch(r"(\d{1,2})\.",x)
         if not m:continue
         rank=int(m.group(1))
         if not 1<=rank<=50 or idx+1>=len(words):continue
         name=words[idx+1]
-        if not re.search(r"[\\u3400-\\u9fffA-Za-z]",name):continue
+        if not re.search(r"[\u3400-\u9fffA-Za-z]",name):continue
         row=hot_item("抖音",name,link,rank,now,"抖音公开热点榜")
         if row:results.append(row)
     if len(results)<3:raise ValueError("Douyin public chart was not readable")
