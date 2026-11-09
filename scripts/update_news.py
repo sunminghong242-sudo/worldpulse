@@ -14,6 +14,8 @@ from html.parser import HTMLParser
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
+from deep_translator import GoogleTranslator
+
 ROOT=Path(__file__).resolve().parents[1]
 OUT=ROOT/"data"/"news.json"
 API="https://api.gdeltproject.org/api/v2/doc/doc"
@@ -59,7 +61,6 @@ def article(item,cat,rank,now,days):
     if len(title)<8 or not url.startswith(("https://","http://")):return
     if cat=="concert" and not CONCERT_TERMS.search(title):return
     language=str(item.get("language","")).lower()
-    if cat=="world" and language not in ("chinese","english",""):return
     if cat=="youth" and not re.search(r"小红书|抖音|douyin|xiaohongshu",title,re.I):return
     try:seen=dt.datetime.strptime(item.get("seendate",""),"%Y%m%dT%H%M%SZ").replace(tzinfo=dt.timezone.utc)
     except (ValueError,TypeError):return
@@ -67,7 +68,7 @@ def article(item,cat,rank,now,days):
     if age>days*24 or age< -24:return
     key=re.sub(r"[^\w\u3400-\u9fff]+","",title.lower())
     source=plain(item.get("domain","")) or urllib.parse.urlsplit(url).hostname or "新闻来源"
-    return {"id":hashlib.sha1(key.encode()).hexdigest()[:16],"category":cat,"title":title,"source":source,"url":url,"published_at":seen.isoformat(),"score":round(115-rank*1.2+max(0,22-age/3)+(8 if str(item.get("language","")).lower()=="chinese" else 0)+(22 if cat=="concert" and any(a.lower() in title.lower() for a in YOUNG_ARTISTS) else 0)+(8 if cat=="concert" and REGION_TERMS.search(title) else 0),2)}
+    return {"id":hashlib.sha1(key.encode()).hexdigest()[:16],"category":cat,"title":title,"original_language":language,"source":source,"url":url,"published_at":seen.isoformat(),"score":round(115-rank*1.2+max(0,22-age/3)+(8 if str(item.get("language","")).lower()=="chinese" else 0)+(22 if cat=="concert" and any(a.lower() in title.lower() for a in YOUNG_ARTISTS) else 0)+(8 if cat=="concert" and REGION_TERMS.search(title) else 0),2)}
 class MetaDescription(HTMLParser):
     def __init__(self):
         super().__init__()
@@ -120,6 +121,81 @@ def short_summary(title,headline,description):
                 return detail,"原标题提炼"
         return "目前仅检索到媒体标题，报道背景及细节请查看原文。","仅有标题"
     return "目前仅检索到媒体标题，报道背景及细节请查看原文。","仅有标题"
+
+# GDELT supplies the language for most indexed articles. We keep English
+# and Chinese unchanged, and translate all other identified languages into
+# Simplified Chinese. Unsupported source languages are not published untranslated.
+LANGUAGE_TAGS={"english","en","eng","chinese","zh","zh-cn","zh-tw","mandarin",
+               "cantonese","traditional chinese","simplified chinese"}
+CHINESE_TAGS={"chinese","zh","zh-cn","zh-tw","mandarin","cantonese",
+              "traditional chinese","simplified chinese"}
+def source_language(item):
+    raw=str(item.get("original_language") or "").strip().lower()
+    if raw:return raw
+    title=item.get("title","")
+    if re.search(r"[\u3040-\u30ff]",title):return "japanese"
+    if re.search(r"[\uac00-\ud7af]",title):return "korean"
+    if re.search(r"[\u0400-\u052f]",title):return "russian"
+    if re.search(r"[\u0600-\u06ff]",title):return "arabic"
+    if re.search(r"[\u0e00-\u0e7f]",title):return "thai"
+    if re.search(r"[\u0370-\u03ff]",title):return "greek"
+    # Don't guess Latin-script languages from short ambiguous headlines.
+    return "unknown"
+
+def to_simplified(text):
+    if not text or not text.strip():return text
+    translated=GoogleTranslator(source="auto",target="zh-CN").translate(text)
+    if not isinstance(translated,str) or not translated.strip():
+        raise ValueError("translation was empty")
+    # If a translation service returns unchanged foreign-language text, this
+    # does not count as a successful translation.
+    if plain(translated).casefold()==plain(text).casefold():
+        raise ValueError("translation unchanged")
+    return plain(translated)
+
+def translate_news(items,previous):
+    cache={}
+    for item in previous.get("items",[]):
+        if item.get("translation_status")=="translated" and item.get("original_title"):
+            cache[item["original_title"]]=(item.get("headline"),item.get("summary"),
+                                            item.get("summary_basis","媒体页面简介"))
+    failed=0
+    for item in items:
+        if item.get("source_type")=="social_trend":continue
+        lang=source_language(item)
+        item["display_language"]="中文" if lang in CHINESE_TAGS else ("English" if lang in ("english","en","eng") else lang)
+        # An unidentified Latin headline could be English. We never translate
+        # it based on a guess; known non-Chinese/English languages do translate.
+        if lang in LANGUAGE_TAGS or lang=="unknown":
+            item["translation_status"]="original"
+            continue
+        original=item["title"]
+        item["original_title"]=original
+        prior=cache.get(original)
+        if prior:
+            item["headline"],item["summary"],item["summary_basis"]=prior
+            item["translation_status"]="translated"
+            continue
+        try:
+            new_title=to_simplified(item.get("headline") or original)
+            old_summary=item.get("summary","")
+            basis=item.get("summary_basis","")
+            if basis in ("媒体页面简介","原标题提炼") and old_summary:
+                new_summary=to_simplified(old_summary)
+            else:
+                new_summary=old_summary
+            item["headline"]=new_title
+            item["summary"]=new_summary
+            item["summary_basis"]=(basis or "来源标题")+" · 简体中文译文"
+            item["translation_status"]="translated"
+        except Exception as exc:
+            # Keep raw text in original_title for auditing, but avoid showing
+            # a non-Chinese/English headline as though it had been translated.
+            item["translation_status"]="failed"
+            failed+=1
+            logging.warning("Translation failed for %s: %s",original[:55],exc)
+        time.sleep(0.3)
+    return [x for x in items if x.get("translation_status")!="failed"],failed
 
 def add_editorial_fields(items):
     # Fetch a modest number of publisher snippets in parallel to limit load.
@@ -291,6 +367,9 @@ def main():
     out.sort(key=lambda x:(list(LIMIT).index(x["category"]),-x["score"]))
     if out:
         add_editorial_fields(out)
+        out,translation_failures=translate_news(out,old)
+    else:
+        translation_failures=0
     if not out:
         if old.get("items"):
             old["status"]="stale"
@@ -301,7 +380,7 @@ def main():
         logging.warning("No usable update: only %s articles",len(out))
         return
     hk=now.astimezone(HK)
-    payload={"version":1,"status":"partial" if bad else "live","updated_at":hk.isoformat(timespec="seconds"),"edition":"早报" if 9<=hk.hour<21 else "晚报","timezone":"Asia/Hong_Kong","notice":"部分新闻源未响应，报道可能不完整。" if bad else "","methodology":"首页全球 7 篇、内地年轻人热点 3 篇，其他栏目各最多 3 篇。世界新闻来自 GDELT，年轻人话题优先取抖音公开热榜及第三方汇集的小红书公开榜单。摘要不编造未核实细节。","feed_successes":ok,"feed_failures":bad,"items":out}
+    payload={"version":1,"status":"partial" if bad else "live","updated_at":hk.isoformat(timespec="seconds"),"edition":"早报" if 9<=hk.hour<21 else "晚报","timezone":"Asia/Hong_Kong","notice":"部分新闻源未响应，报道可能不完整。" if bad else "","methodology":"首页全球 7 篇、内地年轻人热点 3 篇，其他栏目各最多 3 篇。中文与英文原样显示；其他已识别语种翻译成简体中文，无法翻译的条目不显示。世界新闻来自 GDELT，摘要不编造未核实细节。","feed_successes":ok,"feed_failures":bad,"translation_failures":translation_failures,"items":out}
     OUT.parent.mkdir(parents=True,exist_ok=True)
     OUT.write_text(json.dumps(payload,ensure_ascii=False,indent=2)+"\n",encoding="utf8")
     logging.info("Saved %s articles",len(out))
