@@ -93,8 +93,11 @@ def get_publisher_description(url):
         return ""
 
 def clean_headline(title):
-    # Remove the publisher's byline after common vertical-bar/underscore separators.
+    # Remove publisher names and split two Chinese clauses only when both are substantive.
     title=re.split(r"\s+[|｜_]\s+|\s+\|\s+| _ ",title,maxsplit=1)[0].strip()
+    chunks=re.split(r"(?<=[\u3400-\u9fff])\s+(?=[\u3400-\u9fff])|[；;]\s*",title,maxsplit=1)
+    if len(chunks)==2 and len(chunks[0])>=12 and len(chunks[1])>=10:
+        return chunks[0].strip()
     return title or "新闻动态"
 
 def short_summary(title,headline,description):
@@ -110,7 +113,11 @@ def short_summary(title,headline,description):
     # Without source metadata the original headline is the only verified content.
     # A standalone summary is *not* fabricated from a headline.
     if title.strip()!=headline.strip():
-        return title.strip()[:170],"原标题速览"
+        if title.startswith(headline):
+            detail=title[len(headline):].strip(" ：:，,；;。|｜_—- ")
+            if len(detail)>=10 and len(detail)<=170 and not re.search(r"(网|新闻|日报|传媒|媒体)$",detail):
+                return detail,"原标题提炼"
+        return "目前仅检索到媒体标题，报道背景及细节请查看原文。","仅有标题"
     return "目前仅检索到媒体标题，报道背景及细节请查看原文。","仅有标题"
 
 def add_editorial_fields(items):
