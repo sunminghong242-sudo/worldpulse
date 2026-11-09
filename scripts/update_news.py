@@ -94,7 +94,7 @@ def get_publisher_description(url):
 
 def clean_headline(title):
     # Remove the publisher's byline after common vertical-bar/underscore separators.
-    title=re.split(r"\\s+[|｜_]\\s+|\\s+\\|\\s+| _ ",title,maxsplit=1)[0].strip()
+    title=re.split(r"\s+[|｜_]\s+|\s+\|\s+| _ ",title,maxsplit=1)[0].strip()
     return title or "新闻动态"
 
 def short_summary(title,headline,description):
