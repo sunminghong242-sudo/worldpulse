@@ -1,13 +1,14 @@
 {
   "version": 1,
   "status": "partial",
-  "updated_at": "2026-11-09T12:34:29+08:00",
+  "updated_at": "2026-11-09T13:57:09+08:00",
   "edition": "早报",
   "timezone": "Asia/Hong_Kong",
   "notice": "部分新闻源未响应，报道可能不完整。",
-  "methodology": "首页全球 7 篇、内地年轻人热点 3 篇，其他栏目各最多 3 篇。世界新闻来自 GDELT，年轻人话题优先取抖音公开热榜及第三方汇集的小红书公开榜单。摘要不编造未核实细节。",
-  "feed_successes": 1,
-  "feed_failures": 11,
+  "methodology": "首页全球 7 篇、内地年轻人热点 3 篇，其他栏目各最多 3 篇。中文与英文原样显示；其他已识别语种翻译成简体中文，无法翻译的条目不显示。世界新闻来自 GDELT，摘要不编造未核实细节。",
+  "feed_successes": 3,
+  "feed_failures": 9,
+  "translation_failures": 6,
   "items": [
     {
       "id": "beab127148c13a40",
@@ -19,19 +20,9 @@
       "score": 137.33,
       "headline": "南海爭端延燒 ！ 菲外交部罕見重申 「 文人領軍 」 警告自家官員勿在中國議題多嘴 - 國際",
       "summary": "首次上稿 11-08 22:00更新時間 11-09 06:21菲律賓本週將主辦東南亞國家協會（ASEAN）重要峰會，預計美國總統川普也將與會。在此敏感時刻，菲律賓外交部8日罕見發表強硬聲明，斥責自家政府官員與軍事單位，要求在針對中國的發言上必須保持「統一口徑」，避免破壞國家的外交斡旋。",
-      "summary_basis": "媒体页面简介"
-    },
-    {
-      "id": "fbe3569845dbb9e6",
-      "category": "world",
-      "title": "Cumhurbaşkanı Erdoğan ile ABD Başkanı Trump telefonda görüştü",
-      "source": "haber.mynet.com",
-      "url": "https://haber.mynet.com/cumhurbaskani-erdogan-ile-abd-baskani-trump-telefonda-gorustu-110107320334",
-      "published_at": "2026-11-07T18:00:00+00:00",
-      "score": 122.03,
-      "headline": "Cumhurbaşkanı Erdoğan ile ABD Başkanı Trump telefonda görüştü",
-      "summary": "Cumhurbaşkanı Recep Tayyip Erdoğan, Amerika Birleşik Devletleri Başkanı Donald Trump ile bir telefon görüşmesi gerçekleştirdi.",
-      "summary_basis": "媒体页面简介"
+      "summary_basis": "媒体页面简介",
+      "display_language": "unknown",
+      "translation_status": "original"
     },
     {
       "id": "cd008bce74eb50a0",
@@ -43,55 +34,9 @@
       "score": 117.57,
       "headline": "自由廣場 》「 台灣有事 」 答辯週年",
       "summary": "◎王輝生日相高市早苗去年十一月七日，在國會答辯台灣有事可能構成日本「存立危機事態」，引爆日中外交風波。事隔一年，雙方對話依然停滯，引起日媒關注並推出系列報導。然而，高市的答辯",
-      "summary_basis": "媒体页面简介"
-    },
-    {
-      "id": "03dc912c72ae73d3",
-      "category": "world",
-      "title": "Cumhurbaşkanı Recep Tayyip Erdoğan , ABD Başkanı Donald Trump ile telefonda görüştü",
-      "source": "haberler.com",
-      "url": "https://www.haberler.com/guncel/cumhurbaskani-recep-tayyip-erdogan-abd-baskani-20405850-haberi/",
-      "published_at": "2026-11-07T18:00:00+00:00",
-      "score": 116.03,
-      "headline": "Cumhurbaşkanı Recep Tayyip Erdoğan , ABD Başkanı Donald Trump ile telefonda görüştü",
-      "summary": "Cumhurbaşkanı Recep Tayyip Erdoğan, ABD Başkanı Donald Trump ile son iki hafta içinde üçüncü kez telefon görüşmesi gerçekleştirdi.",
-      "summary_basis": "媒体页面简介"
-    },
-    {
-      "id": "4db1dce5e0ac055f",
-      "category": "world",
-      "title": "Cumhurbaþkaný Erdoðan , ABD Baþkaný Trump ile gört",
-      "source": "star.com.tr",
-      "url": "https://www.star.com.tr/guncel/cumhurbaskani-erdogan-abd-baskani-trump-ile-gorustu-haber-2051921/",
-      "published_at": "2026-11-07T18:00:00+00:00",
-      "score": 112.43,
-      "headline": "Cumhurbaþkaný Erdoðan , ABD Baþkaný Trump ile gört",
-      "summary": "Cumhurba�kan� Recep Tayyip Erdo�an, Amerika Birle�ik Devletleri Ba�kan� Donald Trump ile bir telefon g�r��mesi ger�ekle�tirdi.",
-      "summary_basis": "媒体页面简介"
-    },
-    {
-      "id": "7666fc8a24907516",
-      "category": "world",
-      "title": "Cumhurbaşkanı Erdoğan , ABD Başkanı Trump ile görüştü",
-      "source": "ntv.com.tr",
-      "url": "https://www.ntv.com.tr/turkiye/cumhurbaskani-erdogan-abd-baskani-trump-ile-gorustu-1749866",
-      "published_at": "2026-11-07T22:00:00+00:00",
-      "score": 111.37,
-      "headline": "Cumhurbaşkanı Erdoğan , ABD Başkanı Trump ile görüştü",
-      "summary": "Cumhurbaşkanı Erdoğan, ABD Başkanı Trump ile telefonda görüştü. Görüşmede ikili gelişmeler ile bölgesel ve küresel gelişmeler ele alındı.",
-      "summary_basis": "媒体页面简介"
-    },
-    {
-      "id": "ab75338da131cdb1",
-      "category": "world",
-      "title": "Cumhurbaşkanı Erdoğan , ABD Başkanı Trump ile telefonda görüştü",
-      "source": "aa.com.tr",
-      "url": "https://www.aa.com.tr/tr/gundem/cumhurbaskani-erdogan-abd-baskani-trump-ile-telefonda-gorustu/4115395",
-      "published_at": "2026-11-07T19:00:00+00:00",
-      "score": 109.17,
-      "headline": "Cumhurbaşkanı Erdoğan , ABD Başkanı Trump ile telefonda görüştü",
-      "summary": "目前仅检索到媒体标题，报道背景及细节请查看原文。",
-      "summary_basis": "仅有标题"
+      "summary_basis": "媒体页面简介",
+      "display_language": "unknown",
+      "translation_status": "original"
     },
     {
       "id": "3c2d86fe20c15720",
@@ -136,6 +81,81 @@
       "score": 197
     },
     {
+      "id": "084bb9042cde137c",
+      "category": "tech",
+      "title": "Nvidia launches investigation into CEO Jensen Huang",
+      "original_language": "english",
+      "source": "wyff4.com",
+      "url": "https://www.wyff4.com/article/nvidia-investigation-ceo-jensen-huang-foreign-intelligence/74369280",
+      "published_at": "2026-11-09T01:00:00+00:00",
+      "score": 135.35,
+      "headline": "Nvidia launches investigation into CEO Jensen Huang",
+      "summary": "The investigation comes after U.S. officials expressed concern over Huang's relationship with the executive of a Singapore-based company.",
+      "summary_basis": "媒体页面简介",
+      "display_language": "English",
+      "translation_status": "original"
+    },
+    {
+      "id": "4026acabea4481d7",
+      "category": "tech",
+      "title": "Nvidia CEO Jensen Huang affair : The Chinese spy scandal .",
+      "original_language": "english",
+      "source": "mamamia.com.au",
+      "url": "https://www.mamamia.com.au/jensen-huang-nvidia-affair/",
+      "published_at": "2026-11-09T05:30:00+00:00",
+      "score": 123.65,
+      "headline": "Nvidia CEO Jensen Huang affair : The Chinese spy scandal .",
+      "summary": "\"I owe my family and all of you an apology.\"",
+      "summary_basis": "媒体页面简介",
+      "display_language": "English",
+      "translation_status": "original"
+    },
+    {
+      "id": "1a56e3ced4b82d47",
+      "category": "gaming",
+      "title": "全國青年電競錦標賽首日激戰 「 台北海大狂獵鯊 」 抱走20萬 | 體育",
+      "original_language": "chinese",
+      "source": "newtalk.tw",
+      "url": "https://newtalk.tw/news/view/2026-11-07/1069889",
+      "published_at": "2026-11-07T17:30:00+00:00",
+      "score": 130.45,
+      "headline": "全國青年電競錦標賽首日激戰 「 台北海大狂獵鯊 」 抱走20萬",
+      "summary": "高雄美麗島站「光之穹頂」化身頂級電競競技場！第六屆「全國電競青年錦標賽 × KAOHSIUNG ESPORTS SHOWDOWN」7日迎來首日《特戰英豪》總決賽。不僅舞台上冠軍戰兩隊點燃激烈戰火，周邊更進駐VR棒球、體感足球等多元虛擬遊戲運動體驗，吸引超過5千人次，青年學子、玩家及各年齡層民眾湧入同",
+      "summary_basis": "媒体页面简介",
+      "display_language": "中文",
+      "translation_status": "original"
+    },
+    {
+      "id": "15ecaf3c17c756d3",
+      "category": "gaming",
+      "title": "波士顿科学Rezūm EVO国产设备亮相进博会 加速创新疗法本土化落地",
+      "original_language": "chinese",
+      "source": "163.com",
+      "url": "https://www.163.com/dy/article/LB9JR1QF055040N3.html",
+      "published_at": "2026-11-09T02:00:00+00:00",
+      "score": 128.08,
+      "headline": "波士顿科学Rezūm EVO国产设备亮相进博会",
+      "summary": "波士顿科学Rezūm EVO国产设备亮相进博会 加速创新疗法本土化落地,增生,治疗,前列腺,进博会,国产设备,波士顿科学",
+      "summary_basis": "媒体页面简介",
+      "display_language": "中文",
+      "translation_status": "original"
+    },
+    {
+      "id": "41671f15783db5ba",
+      "category": "gaming",
+      "title": "MongolZ , MOUZ advance to IEM Beijing grand final",
+      "original_language": "english",
+      "source": "chinanationalnews.com",
+      "url": "http://www.chinanationalnews.com/news/279418679/mongolz-mouz-advance-to-iem-beijing-grand-final",
+      "published_at": "2026-11-07T22:00:00+00:00",
+      "score": 125.15,
+      "headline": "MongolZ , MOUZ advance to IEM Beijing grand final",
+      "summary": "目前仅检索到媒体标题，报道背景及细节请查看原文。",
+      "summary_basis": "仅有标题",
+      "display_language": "English",
+      "translation_status": "original"
+    },
+    {
       "id": "fd3b92e78af40de3",
       "category": "entertainment",
       "title": "《 惡作劇之吻 》 直樹爸表態 「 排隊握手蔣萬安 」 親揭原因 ： 何懼之有 - 娛樂",
@@ -145,7 +165,9 @@
       "score": 137.37,
       "headline": "《 惡作劇之吻 》 直樹爸表態 「 排隊握手蔣萬安 」 親揭原因 ： 何懼之有 - 娛樂",
       "summary": "隨著九合一大選進入倒數衝刺階段，各地候選人積極展開造勢，演藝圈不少名人也紛紛公開表態。憑藉經典偶像劇《惡作劇之吻》江直樹父親一角深植人心的資深演員張永正，日前也被目擊現身藍營的造勢大會，甚至在現場跟著",
-      "summary_basis": "媒体页面简介"
+      "summary_basis": "媒体页面简介",
+      "display_language": "unknown",
+      "translation_status": "original"
     },
     {
       "id": "c9599010643407f2",
@@ -157,7 +179,9 @@
       "score": 125.57,
       "headline": "罗马尼亚媒体 ： 斯坦丘随英博夺中超冠军 ， 最后5轮抹平14分差",
       "summary": "罗马尼亚媒体：斯坦丘随英博夺中超冠军，最后5轮抹平14分差,捷克,英博,中超,布尔克,罗马尼亚,尼古拉·斯坦丘",
-      "summary_basis": "媒体页面简介"
+      "summary_basis": "媒体页面简介",
+      "display_language": "unknown",
+      "translation_status": "original"
     },
     {
       "id": "9e232cad36dfbb79",
@@ -169,7 +193,9 @@
       "score": 117.27,
       "headline": "古天樂率眾藝人出戰明星籃球賽",
       "summary": "姜濤罰球壓力爆燈 - 娛樂",
-      "summary_basis": "原标题提炼"
+      "summary_basis": "原标题提炼",
+      "display_language": "unknown",
+      "translation_status": "original"
     },
     {
       "id": "03df86d2ab5a96b2",
@@ -181,7 +207,9 @@
       "score": 144.14,
       "headline": "拉加德临别鹰派信号 欧洲央行12月加息几成定局 - CFi . CN 中财网",
       "summary": "目前仅检索到媒体标题，报道背景及细节请查看原文。",
-      "summary_basis": "仅有标题"
+      "summary_basis": "仅有标题",
+      "display_language": "unknown",
+      "translation_status": "original"
     },
     {
       "id": "e64d40102c9db856",
@@ -193,7 +221,9 @@
       "score": 142.94,
       "headline": "拉加德临别鹰派信号 欧洲央行12月加息几成定局",
       "summary": "【拉加德临别鹰派信号 欧洲央行12月加息几成定局】欧洲央行行长克里斯蒂娜·拉加德（ChristineLagarde）在接受媒体采访时暗示，欧洲央行有可能在12月举行的管理委员会会议上再次加息。",
-      "summary_basis": "媒体页面简介"
+      "summary_basis": "媒体页面简介",
+      "display_language": "unknown",
+      "translation_status": "original"
     },
     {
       "id": "aafe329eaa3d9e37",
@@ -205,7 +235,9 @@
       "score": 127.71,
       "headline": "How Javier Milei stopped Argentina double - digit inflation",
       "summary": "Argentina's president restored the solvency of a bankrupt Treasury and a broken central bank.",
-      "summary_basis": "媒体页面简介"
+      "summary_basis": "媒体页面简介",
+      "display_language": "English",
+      "translation_status": "original"
     }
   ]
 }
