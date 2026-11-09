@@ -15,6 +15,9 @@ from pathlib import Path
 from zoneinfo import ZoneInfo
 
 from deep_translator import GoogleTranslator
+from langdetect import DetectorFactory, detect_langs
+
+DetectorFactory.seed=0
 
 ROOT=Path(__file__).resolve().parents[1]
 OUT=ROOT/"data"/"news.json"
@@ -139,7 +142,16 @@ def source_language(item):
     if re.search(r"[\u0600-\u06ff]",title):return "arabic"
     if re.search(r"[\u0e00-\u0e7f]",title):return "thai"
     if re.search(r"[\u0370-\u03ff]",title):return "greek"
-    # Don't guess Latin-script languages from short ambiguous headlines.
+    # Short Roman-letter headlines are ambiguous; only accept a high-confidence
+    # language detection for reasonably long sentences without a GDELT tag.
+    words=re.findall(r"[A-Za-zÀ-ž]+",title)
+    if len(words)>=6 and len(title)>=42:
+        try:
+            guesses=detect_langs(title)
+            if guesses and guesses[0].prob>=0.92:
+                return guesses[0].lang.lower()
+        except Exception:
+            pass
     return "unknown"
 
 def to_simplified(text):
