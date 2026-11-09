@@ -1,8 +1,391 @@
 {
   "version": 1,
-  "status": "demo",
-  "updated_at": null,
+  "status": "partial",
+  "updated_at": "2026-11-09T11:46:06+08:00",
+  "edition": "早报",
   "timezone": "Asia/Hong_Kong",
-  "notice": "网站已部署代码，但首次新闻更新尚未完成。请在 Actions 页面启动新闻更新工作流。",
-  "items": []
+  "notice": "部分新闻源未响应，报道可能不完整。",
+  "methodology": "GDELT 新闻索引的搜索相关性和收录时间；非全网热度真实排行。",
+  "feed_successes": 5,
+  "feed_failures": 10,
+  "items": [
+    {
+      "id": "81dbc9a7edb8502e",
+      "category": "tech",
+      "title": "AI技术在财务领域加速应用 报告建言建立规范可操作流程",
+      "source": "news.china.com.cn",
+      "url": "http://news.china.com.cn/2026-11/09/content_118766785.shtml",
+      "published_at": "2026-11-09T02:00:00+00:00",
+      "score": 142.01
+    },
+    {
+      "id": "6814cb3cf1db3eef",
+      "category": "concert",
+      "title": "陈茂波 ： 让香港高增值旅游和会展业发展更蓬勃 _ 东方财富网",
+      "source": "finance.eastmoney.com",
+      "url": "https://finance.eastmoney.com/a/202611083925661237.html",
+      "published_at": "2026-11-08T14:00:00+00:00",
+      "score": 140.41
+    },
+    {
+      "id": "32b702da8fb77ad7",
+      "category": "concert",
+      "title": "獨家 ／ 沈伯洋出新招再辦 「 洋流祭 」 把 「 政策島 」 搬進公園邊聽團邊闖關 | 政治 | 三立新聞網 SETN . COM",
+      "source": "setn.com",
+      "url": "https://www.setn.com/news/1935783",
+      "published_at": "2026-11-09T00:30:00+00:00",
+      "score": 140.31
+    },
+    {
+      "id": "6f61aacd5f6aebbf",
+      "category": "tech",
+      "title": "新华社蓝皮书详解智能传播生态下媒体共治之策",
+      "source": "finance.sina.com.cn",
+      "url": "https://finance.sina.com.cn/tech/roll/2026-11-09/doc-iniyazcy6363161.shtml",
+      "published_at": "2026-11-09T02:00:00+00:00",
+      "score": 138.41
+    },
+    {
+      "id": "d5b141736522dc34",
+      "category": "tech",
+      "title": "新华社蓝皮书详解智能传播生态下媒体共治之策 - 新华网",
+      "source": "bj.xinhuanet.com",
+      "url": "http://www.bj.xinhuanet.com/20261109/ca47641e41f64f94909c52c13351aac9/c.html",
+      "published_at": "2026-11-09T02:00:00+00:00",
+      "score": 137.21
+    },
+    {
+      "id": "18d3af60b90f85ae",
+      "category": "concert",
+      "title": "客家音樂不設限 ！ 縱谷HAKKA音樂創作決賽展現多元創作能量",
+      "source": "n.yam.com",
+      "url": "https://n.yam.com/Article/20261108302998",
+      "published_at": "2026-11-08T15:30:00+00:00",
+      "score": 136.11
+    },
+    {
+      "id": "ad152248ab1edd6f",
+      "category": "concert",
+      "title": "「 港仔台爸 」 張啟樂召集 、 啦啦隊港籍人氣成員冼迪琦化身活動大使 「 2026好友港節市集 」 感受 「 港好友你 」 的熱情活力",
+      "source": "n.yam.com",
+      "url": "https://n.yam.com/Article/20261108750938",
+      "published_at": "2026-11-08T14:30:00+00:00",
+      "score": 135.78
+    },
+    {
+      "id": "07c236107facb064",
+      "category": "concert",
+      "title": "一曲清音遇知音 ， 金陵琴派王震师生音乐奏响",
+      "source": "yangtse.com",
+      "url": "https://www.yangtse.com/news/jiangsu/nanjing/202611/t20261109_410553.html",
+      "published_at": "2026-11-09T00:30:00+00:00",
+      "score": 134.31
+    },
+    {
+      "id": "151e87254b1eee06",
+      "category": "concert",
+      "title": "「 粹基隆 」 秋風微醺音樂會市定古蹟登場 冬雨寄情音樂會明年1月開唱 | 基宜花東 | 地方",
+      "source": "udn.com",
+      "url": "https://udn.com/news/story/7328/9865816",
+      "published_at": "2026-11-08T17:00:00+00:00",
+      "score": 134.21
+    },
+    {
+      "id": "e6b8fd2c5c48903f",
+      "category": "concert",
+      "title": "راشد الماجد يحيي ليلة ثانية بموسم الرياض بعد نفاد تذاكر حفله الأول",
+      "source": "slaati.com",
+      "url": "https://slaati.com/2026/11/08/p2878957.html",
+      "published_at": "2026-11-08T21:00:00+00:00",
+      "score": 133.54
+    },
+    {
+      "id": "e51703b1c87b1b08",
+      "category": "concert",
+      "title": "百岁寿宴会南红 罗艳卿感叹 ： 八牡丹只剩我们两个",
+      "source": "zaobao.com.sg",
+      "url": "https://www.zaobao.com.sg/entertainment/story20261108-9966589",
+      "published_at": "2026-11-08T10:30:00+00:00",
+      "score": 133.24
+    },
+    {
+      "id": "8c846d29a03505de",
+      "category": "youth",
+      "title": "Stormi Steele Turns $2 . 6 Million TikTok Livestream Into A Business Blueprint",
+      "source": "blackenterprise.com",
+      "url": "https://www.blackenterprise.com/stormi-steele-million-tiktok-livestream/",
+      "published_at": "2026-11-08T19:30:00+00:00",
+      "score": 133.04
+    },
+    {
+      "id": "f483a0d797658fec",
+      "category": "tech",
+      "title": "AI是决策引擎而非成本杠杆 ， 毕马威进博会现场解析财务智能化价值",
+      "source": "163.com",
+      "url": "https://www.163.com/dy/article/LB59MH1M055040N3.html",
+      "published_at": "2026-11-07T10:00:00+00:00",
+      "score": 131.08
+    },
+    {
+      "id": "16ac23d98e06745e",
+      "category": "youth",
+      "title": "Spudman issues update ahead of opening at Cardiff Winter Wonderland",
+      "source": "walesonline.co.uk",
+      "url": "https://www.walesonline.co.uk/whats-on/food-drink-news/spudman-issues-update-ahead-opening-34881587",
+      "published_at": "2026-11-08T19:30:00+00:00",
+      "score": 130.64
+    },
+    {
+      "id": "1022ae81b3c4d2a8",
+      "category": "tech",
+      "title": "受间谍疑云波及 ？ 黄仁勋长女临时取消访韩光华日报 | 1910年创刊 创新每一天生活",
+      "source": "kwongwah.com.my",
+      "url": "https://www.kwongwah.com.my/20261108/%E5%8F%97%E9%97%B4%E8%B0%8D%E7%96%91%E4%BA%91%E6%B3%A2%E5%8F%8A%EF%BC%9F-%E9%BB%84%E4%BB%81%E5%8B%8B%E9%95%BF%E5%A5%B3%E4%B8%B4%E6%97%B6%E5%8F%96%E6%B6%88%E8%AE%BF%E9%9F%A9/",
+      "published_at": "2026-11-08T09:00:00+00:00",
+      "score": 130.34
+    },
+    {
+      "id": "643658c24ad46d85",
+      "category": "concert",
+      "title": "盧秀燕探班玖壹壹送枇杷膏 南北貳路音樂節週末水湳登場",
+      "source": "n.yam.com",
+      "url": "https://n.yam.com/Article/20261107588564",
+      "published_at": "2026-11-07T07:00:00+00:00",
+      "score": 130.08
+    },
+    {
+      "id": "1be0ff679d6c4d63",
+      "category": "tech",
+      "title": "新昭君们功勋卓著 - 大宗师发表于 时事述评 - 论坛",
+      "source": "bbs.wenxuecity.com",
+      "url": "https://bbs.wenxuecity.com/currentevent/4101791.html",
+      "published_at": "2026-11-08T18:30:00+00:00",
+      "score": 129.91
+    },
+    {
+      "id": "a91369360db6116c",
+      "category": "concert",
+      "title": "「 團結太保感謝有您 」 音樂會登場 4千人齊聚捐愛心發票助獨居長輩",
+      "source": "n.yam.com",
+      "url": "https://n.yam.com/Article/20261108901834",
+      "published_at": "2026-11-08T13:00:00+00:00",
+      "score": 129.28
+    },
+    {
+      "id": "b17f0f7526702ef9",
+      "category": "concert",
+      "title": "飛簷走壁來真的 廣西懸崖書店點燈 宛如武俠空中樓閣 - 兩岸",
+      "source": "chinatimes.com",
+      "url": "https://www.chinatimes.com/realtimenews/20261108000005-260409",
+      "published_at": "2026-11-08T16:00:00+00:00",
+      "score": 127.88
+    },
+    {
+      "id": "fc62ceb03bdfd31a",
+      "category": "concert",
+      "title": "Koncert Cece Ražnatović u Bugarskoj",
+      "source": "informer.rs",
+      "url": "https://informer.rs/dzet-set/estrada/1167873/ceca-raznatovic-koncert-bugarska",
+      "published_at": "2026-11-08T09:00:00+00:00",
+      "score": 127.14
+    },
+    {
+      "id": "43e19b757fc0769e",
+      "category": "tech",
+      "title": "傳與中國女間諜曾交往 黃仁勳料面臨美國新國會強力檢視 | 國際",
+      "source": "cna.com.tw",
+      "url": "https://www.cna.com.tw:443/news/aopl/202611080143.aspx",
+      "published_at": "2026-11-08T10:30:00+00:00",
+      "score": 126.04
+    },
+    {
+      "id": "2470c66868ba30ff",
+      "category": "concert",
+      "title": "百年要塞飄咖啡香 ！ 基隆司令大院子秋夜微醺開唱",
+      "source": "n.yam.com",
+      "url": "https://n.yam.com/Article/20261108818119",
+      "published_at": "2026-11-08T13:30:00+00:00",
+      "score": 125.84
+    },
+    {
+      "id": "88b10fcda1cf6604",
+      "category": "tech",
+      "title": "对于超级智能 ： 民主党到底在害怕什么 | www . wenxuecity . com",
+      "source": "wenxuecity.com",
+      "url": "https://www.wenxuecity.com/blog/202611/76299/5565.html",
+      "published_at": "2026-11-08T18:30:00+00:00",
+      "score": 125.11
+    },
+    {
+      "id": "528797f006256e93",
+      "category": "tech",
+      "title": "傳與中國女間諜曾交往 黃仁勳料面臨美國新國會強力檢視 | 國際 | 三立新聞網 SETN . COM",
+      "source": "setn.com",
+      "url": "https://www.setn.com/news/1935631",
+      "published_at": "2026-11-08T14:30:00+00:00",
+      "score": 124.98
+    },
+    {
+      "id": "8a7d651fe2e8c1f1",
+      "category": "concert",
+      "title": "百年古蹟裡聽爵士喝咖啡 「 粹基隆 秋風微醺音樂會 」 司令大院子登場",
+      "source": "n.yam.com",
+      "url": "https://n.yam.com/Article/20261108335764",
+      "published_at": "2026-11-08T13:30:00+00:00",
+      "score": 124.64
+    },
+    {
+      "id": "b079f8b3722710ec",
+      "category": "youth",
+      "title": "Brits are getting the ick over dystopian new shopping trend at M & S",
+      "source": "metro.co.uk",
+      "url": "https://metro.co.uk/2026/11/08/brits-getting-ick-dystopian-new-shopping-trend-m-s-29775613/",
+      "published_at": "2026-11-08T21:00:00+00:00",
+      "score": 122.74
+    },
+    {
+      "id": "d66ed6a01a81686a",
+      "category": "concert",
+      "title": "「 團結太保 • 感謝有您 」 音樂會4000多人捐發票助獨居長輩 歌手同台開唱為市長 議員 代表全壘打當選選舉暖心",
+      "source": "n.yam.com",
+      "url": "https://n.yam.com/Article/20261108978838",
+      "published_at": "2026-11-08T13:30:00+00:00",
+      "score": 122.24
+    },
+    {
+      "id": "eda82d0b60a5af08",
+      "category": "concert",
+      "title": "최강 넘어 레전드 … 셔틀콕 새 역사 썼다",
+      "source": "edaily.co.kr",
+      "url": "https://www.edaily.co.kr/News/Read?newsId=01085686645644080&mediaCodeNo=257",
+      "published_at": "2026-11-08T18:30:00+00:00",
+      "score": 121.91
+    },
+    {
+      "id": "6516b85d1082fe44",
+      "category": "concert",
+      "title": "[ HK ] 银河娱乐 ( 00027 ): 截至二零二六年九月三十日止第三季的若干特定未经审核之主要业务表现指标之公布 - CFi . CN 中财网",
+      "source": "cfi.net.cn",
+      "url": "http://www.cfi.net.cn/p20261106000224.html",
+      "published_at": "2026-11-06T02:00:00+00:00",
+      "score": 121.8
+    },
+    {
+      "id": "5167fe3ef1caaf4b",
+      "category": "youth",
+      "title": "Why is Kim Kardashian Skims accessories Advent Calendar receiving backlash ? Dog chew toys but expensive",
+      "source": "indiatimes.com",
+      "url": "https://www.indiatimes.com/trending/why-is-kim-kardashians-skims-accessories-advent-calendar-receiving-backlash-dog-chew-toys-but-expensive/articleshow/135628607.html",
+      "published_at": "2026-11-07T10:00:00+00:00",
+      "score": 120.68
+    },
+    {
+      "id": "f016e91161e6c8b1",
+      "category": "concert",
+      "title": "擴大合作日本9縣市 高流 「 2026下酒祭 FEAT . 日本 」 壓軸12 / 5海風廣場免費入場",
+      "source": "n.yam.com",
+      "url": "https://n.yam.com/Article/20261106234536",
+      "published_at": "2026-11-06T03:30:00+00:00",
+      "score": 120.6
+    },
+    {
+      "id": "e950864e25be27f5",
+      "category": "tech",
+      "title": "华润隆地智美好网络安全×全球网络安全联盟设AI与网络安全研究中心",
+      "source": "finance.sina.com.cn",
+      "url": "https://finance.sina.com.cn/tech/roll/2026-11-06/doc-inixuura8853556.shtml",
+      "published_at": "2026-11-06T08:30:00+00:00",
+      "score": 119.4
+    },
+    {
+      "id": "94a1302e0136f984",
+      "category": "youth",
+      "title": "Skims faces backlash for $148 Advent calendar – NBC4 Washington",
+      "source": "nbcwashington.com",
+      "url": "https://www.nbcwashington.com/entertainment/entertainment-news/skims-faces-backlash-advent-calendar/4179701/",
+      "published_at": "2026-11-08T17:00:00+00:00",
+      "score": 119.01
+    },
+    {
+      "id": "f510a3382ea7daa8",
+      "category": "tech",
+      "title": "CR450动车组模拟驾驶体验及高速列车智能化平台亮相进博会",
+      "source": "news.china.com.cn",
+      "url": "http://news.china.com.cn/txt/2026-11/06/content_118764583.shtml",
+      "published_at": "2026-11-06T11:30:00+00:00",
+      "score": 118.78
+    },
+    {
+      "id": "3f47e06de5f1864f",
+      "category": "youth",
+      "title": "Skims faces backlash for $148 Advent calendar – NBC Chicago",
+      "source": "nbcchicago.com",
+      "url": "https://www.nbcchicago.com/entertainment/entertainment-news/skims-faces-backlash-advent-calendar/4013743/",
+      "published_at": "2026-11-08T19:30:00+00:00",
+      "score": 118.64
+    },
+    {
+      "id": "0e962c2b7ee0ba87",
+      "category": "tech",
+      "title": "黃仁勳捲共諜＋不倫風波 ！ 去年三六食府餐敘黃樂親臉畫面曝",
+      "source": "news.tvbs.com.tw",
+      "url": "https://news.tvbs.com.tw/world/4047131",
+      "published_at": "2026-11-07T05:00:00+00:00",
+      "score": 118.61
+    },
+    {
+      "id": "4cd6a23387b9818e",
+      "category": "youth",
+      "title": "Daily roundup : More cross - border taxis from Nov 16 as Singapore , Malaysia raise quota to 500 each and other top stories today",
+      "source": "asiaone.com",
+      "url": "https://www.asiaone.com:443/world/daily-roundup-more-cross-border-taxis-singapore-malaysia-raise-quota-and-other-top-stories-today",
+      "published_at": "2026-11-06T11:30:00+00:00",
+      "score": 115.58
+    },
+    {
+      "id": "a79e6f11e36e3037",
+      "category": "youth",
+      "title": "Skims Faces Backlash For $148 Advent Calendar of Hair Ties , Other Small Accessories",
+      "source": "today.com",
+      "url": "https://www.today.com/popculture/skims-backlash-advent-calendar-kim-kardashian-rcna608029",
+      "published_at": "2026-11-07T22:00:00+00:00",
+      "score": 113.88
+    },
+    {
+      "id": "f90129e5f8b6064f",
+      "category": "youth",
+      "title": "Is America Affordability Crisis Overblown ?",
+      "source": "radio.foxnews.com",
+      "url": "https://radio.foxnews.com/2026/11/06/is-americas-affordability-crisis-overblown/",
+      "published_at": "2026-11-07T00:00:00+00:00",
+      "score": 111.34
+    },
+    {
+      "id": "2b776d5cd2b81a16",
+      "category": "youth",
+      "title": "Social media firms sue Calif . over kid use restrictions | Regional",
+      "source": "napavalleyregister.com",
+      "url": "https://napavalleyregister.com/news/regional/social-media-companies-sue-california-over-new-law-restricting-use-for-children/article_c342fb60-792b-5778-bb15-c64277e7957a.html",
+      "published_at": "2026-11-06T05:00:00+00:00",
+      "score": 110.2
+    },
+    {
+      "id": "d029c6e26e9ac0b9",
+      "category": "youth",
+      "title": "Vicky Kaushal , Katrina Kaif share first glimpse of son Vihaan on Diwali",
+      "source": "moneycontrol.com",
+      "url": "https://www.moneycontrol.com/entertainment/katrina-kaif-vicky-kaushal-reveal-son-vihaan-s-face-on-diwali-share-family-picture-article-14074938.html",
+      "published_at": "2026-11-08T10:30:00+00:00",
+      "score": 109.64
+    },
+    {
+      "id": "5439291cfdc92440",
+      "category": "youth",
+      "title": "Louis Partridge Rumoured New Girlfriend Accused of Mocking Olivia Rodrigo in Instagram Story",
+      "source": "ibtimes.co.uk",
+      "url": "https://www.ibtimes.co.uk/eva-meloche-olivia-rodrigo-instagram-claims-1830604",
+      "published_at": "2026-11-06T11:00:00+00:00",
+      "score": 109.41
+    }
+  ]
 }
