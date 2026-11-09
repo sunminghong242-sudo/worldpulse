@@ -1,0 +1,50 @@
+name: WorldPulse · Update news and publish
+on:
+  push:
+    branches: [main]
+  schedule:
+    # Hong Kong time 09:00 and 21:00, UTC+8 year-round
+    - cron: '0 1,13 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+concurrency:
+  group: worldpulse
+  cancel-in-progress: false
+jobs:
+  news-and-pages:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Update news
+        run: python scripts/update_news.py
+      - name: Commit latest news snapshot
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/news.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'chore: update headline snapshot [skip ci]'
+            git push
+          fi
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+      - name: Upload website
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+      - name: Deploy Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
