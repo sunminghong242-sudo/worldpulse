@@ -1,15 +1,75 @@
 {
   "version": 1,
   "status": "partial",
-  "updated_at": "2026-11-13T15:38:15+08:00",
-  "edition": "早报",
+  "updated_at": "2026-11-14T04:21:42+08:00",
+  "edition": "晚报",
   "timezone": "Asia/Hong_Kong",
   "notice": "部分新闻源未响应，报道可能不完整。",
   "methodology": "首页全球 7 篇、内地年轻人热点 3 篇，其他栏目各最多 3 篇。中文与英文原样显示；其他已识别语种翻译成简体中文，无法翻译的条目不显示。世界新闻来自 GDELT，摘要不编造未核实细节。",
-  "feed_successes": 0,
-  "feed_failures": 12,
-  "translation_failures": 0,
+  "feed_successes": 1,
+  "feed_failures": 11,
+  "translation_failures": 3,
   "items": [
+    {
+      "id": "c2049b798197edd0",
+      "category": "world",
+      "title": "COP31 ／ 水母等四年才回來 帛琉 《 藍色邊界 》 為孩子守住一片海 | 綜合 | 要聞",
+      "original_language": "chinese",
+      "source": "udn.com",
+      "url": "https://udn.com/news/story/7314/9873649",
+      "published_at": "2026-11-12T03:45:00+00:00",
+      "score": 129.06,
+      "headline": "COP31 ／ 水母等四年才回來",
+      "summary": "「海洋沒有國界，我有三個小孩，我希望他們都能在美麗的海洋環境中成長。」帛琉常駐聯合國大使席德（Ilana Seid）還記得自己兒時潛入水中時，感受到人類與海洋間的緊密連結。帛琉正遭遇嚴峻的氣候變遷衝擊，海平面上升、珊瑚嚴重白化，「海洋生機是帛琉能提供給全世界的禮物，如今已威脅到孩子的未來」。",
+      "summary_basis": "媒体页面简介",
+      "display_language": "中文",
+      "translation_status": "original"
+    },
+    {
+      "id": "6ef123e6eb595d7e",
+      "category": "world",
+      "title": "走进联合国气候变化大会中国角",
+      "original_language": "chinese",
+      "source": "china.qianlong.com",
+      "url": "https://china.qianlong.com/2026/1112/8750075.shtml",
+      "published_at": "2026-11-12T03:30:00+00:00",
+      "score": 124.18,
+      "headline": "走进联合国气候变化大会中国角",
+      "summary": "目前仅检索到媒体标题，报道背景及细节请查看原文。",
+      "summary_basis": "仅有标题",
+      "display_language": "中文",
+      "translation_status": "original"
+    },
+    {
+      "id": "52cdf24238211bf3",
+      "category": "world",
+      "title": "Africa : COP31 - Why Africa Must Rethink Nuclear Energy",
+      "original_language": "english",
+      "source": "allafrica.com",
+      "url": "https://allafrica.com/stories/202611120016.html",
+      "published_at": "2026-11-12T05:30:00+00:00",
+      "score": 124.05,
+      "headline": "Africa : COP31 - Why Africa Must Rethink Nuclear Energy",
+      "summary": "Gabriel Sheunopa Manyangadze holds a placard reading \"No nuclear spin, let renewables win\" as a campaigner leads protesters against nuclear energy in…",
+      "summary_basis": "媒体页面简介",
+      "display_language": "English",
+      "translation_status": "original"
+    },
+    {
+      "id": "66c99ca4df9ed0cc",
+      "category": "world",
+      "title": "A coffee cart and the Finnish embassy gain more traction than Albanese",
+      "original_language": "english",
+      "source": "abc.net.au",
+      "url": "https://www.abc.net.au/news/2026-11-12/coffee-cart-finnish-embassy-more-traction-albanese/107367932",
+      "published_at": "2026-11-12T06:45:00+00:00",
+      "score": 119.66,
+      "headline": "A coffee cart and the Finnish embassy gain more traction than Albanese",
+      "summary": "Prime Minister Anthony Albanese packed in the announcements this week before heading overseas for summits once again.",
+      "summary_basis": "媒体页面简介",
+      "display_language": "English",
+      "translation_status": "original"
+    },
     {
       "id": "3c2d86fe20c15720",
       "category": "youth",
@@ -21,7 +81,7 @@
       "summary_basis": "平台话题速览",
       "source": "豚榜·小红书公开榜单聚合",
       "url": "https://www.xiaohongshu.com/search_result?keyword=%E7%94%A8%E4%B8%87%E8%83%BD%E6%97%85%E8%A1%8C%E6%8B%8D%E7%85%A7%E5%A7%BF%E5%8A%BF%E7%BE%8E%E7%BE%8E%E5%87%BA%E7%89%87",
-      "published_at": "2026-11-13T07:38:15.465632+00:00",
+      "published_at": "2026-11-13T20:21:42.991042+00:00",
       "score": 199
     },
     {
@@ -35,7 +95,7 @@
       "summary_basis": "平台话题速览",
       "source": "豚榜·小红书公开榜单聚合",
       "url": "https://www.xiaohongshu.com/search_result?keyword=%E8%80%97%E6%97%B6%E4%B8%89%E5%B9%B4%E6%8B%8D%E4%B8%8B%E5%8F%A4%E8%AF%97%E8%AF%8D%E9%87%8C%E7%9A%84%E4%B8%AD%E5%9B%BD",
-      "published_at": "2026-11-13T07:38:15.465632+00:00",
+      "published_at": "2026-11-13T20:21:42.991042+00:00",
       "score": 198
     },
     {
@@ -49,7 +109,7 @@
       "summary_basis": "平台话题速览",
       "source": "豚榜·小红书公开榜单聚合",
       "url": "https://www.xiaohongshu.com/search_result?keyword=%E6%88%91%E6%8B%8D%E5%88%B0%E4%BA%86%E6%B5%B7%E9%B8%A5%E9%9B%A8",
-      "published_at": "2026-11-13T07:38:15.465632+00:00",
+      "published_at": "2026-11-13T20:21:42.991042+00:00",
       "score": 197
     }
   ]
