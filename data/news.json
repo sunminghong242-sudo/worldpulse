@@ -1,14 +1,14 @@
 {
   "version": 1,
   "status": "partial",
-  "updated_at": "2026-11-18T16:14:47+08:00",
-  "edition": "早报",
+  "updated_at": "2026-11-19T05:07:49+08:00",
+  "edition": "晚报",
   "timezone": "Asia/Hong_Kong",
   "notice": "部分新闻源未响应，报道可能不完整。",
   "methodology": "首页全球 7 篇、内地年轻人热点 3 篇，其他栏目各最多 3 篇。中文与英文原样显示；其他已识别语种翻译成简体中文，无法翻译的条目不显示。世界新闻来自 GDELT，摘要不编造未核实细节。",
-  "feed_successes": 1,
-  "feed_failures": 11,
-  "translation_failures": 3,
+  "feed_successes": 2,
+  "feed_failures": 10,
+  "translation_failures": 4,
   "items": [
     {
       "id": "564f38af47b1ac66",
@@ -18,7 +18,7 @@
       "source": "163.com",
       "url": "https://www.163.com/dy/article/LC0JS4AB0514R9OJ.html",
       "published_at": "2026-11-18T01:15:00+00:00",
-      "score": 142.67,
+      "score": 138.37,
       "headline": "深圳再出发 ， 亚太共命运",
       "summary": "目前仅检索到媒体标题，报道背景及细节请查看原文。",
       "summary_basis": "仅有标题",
@@ -33,9 +33,24 @@
       "source": "163.com",
       "url": "https://www.163.com/dy/article/LC0MIJR4051186CN.html",
       "published_at": "2026-11-18T01:15:00+00:00",
-      "score": 141.47,
+      "score": 137.17,
       "headline": "APEC工商领导人峰会开幕 ， 王兴兴 、 董明珠 、 李东生 、 雷军等参会 ！",
       "summary": "APEC工商领导人峰会开幕，王兴兴、董明珠、李东生、雷军等参会！,雷军,格力,董明珠,王兴兴,工商领导人峰会,李东生(1955年)",
+      "summary_basis": "媒体页面简介",
+      "display_language": "中文",
+      "translation_status": "original"
+    },
+    {
+      "id": "368e98314ebf8f62",
+      "category": "world",
+      "title": "〈 專文 〉 普丁克里米亞大橋遭重創 ！ 烏克蘭精準狙擊戳破俄帝國神話",
+      "original_language": "chinese",
+      "source": "n.yam.com",
+      "url": "https://n.yam.com/Article/20261119492061",
+      "published_at": "2026-11-18T17:30:00+00:00",
+      "score": 132.99,
+      "headline": "〈 專文 〉 普丁克里米亞大橋遭重創 ！ 烏克蘭精準狙擊戳破俄帝國神話",
+      "summary": "2018 年，耗資近 40 億美元的克里米亞大橋公路段啟用時，普丁親自駕駛橘色卡瑪茲（Kamaz）大",
       "summary_basis": "媒体页面简介",
       "display_language": "中文",
       "translation_status": "original"
@@ -48,7 +63,7 @@
       "source": "news.ifeng.com",
       "url": "https://news.ifeng.com/c/8y95YP8QvBV",
       "published_at": "2026-11-18T01:15:00+00:00",
-      "score": 137.87,
+      "score": 132.37,
       "headline": "新加坡总理黄循财人民日报撰文 ： 新中携手 ， 共创开放互联的未来",
       "summary": "自贸区的最新升级涵盖数码与绿色经济、供应链互联互通和创新等领域，为企业和人民带来更多机遇。",
       "summary_basis": "媒体页面简介",
@@ -56,18 +71,18 @@
       "translation_status": "original"
     },
     {
-      "id": "7f13aa5eb75b4a25",
+      "id": "678b18c0a4e950e9",
       "category": "world",
-      "title": "一天之内六场会见 ， 习主席开启繁忙APEC时间",
-      "original_language": "chinese",
-      "source": "163.com",
-      "url": "https://www.163.com/news/article/LC0M9N3F000189FH.html",
-      "published_at": "2026-11-18T01:15:00+00:00",
-      "score": 133.07,
-      "headline": "一天之内六场会见 ， 习主席开启繁忙APEC时间",
-      "summary": "一天之内六场会见，习主席开启繁忙APEC时间,习近平,apec,总统",
+      "title": "Peace in a Humbler Form",
+      "original_language": "english",
+      "source": "ncregister.com",
+      "url": "https://www.ncregister.com/commentaries/weigel-peace-in-a-humbler-form",
+      "published_at": "2026-11-18T17:30:00+00:00",
+      "score": 126.19,
+      "headline": "Peace in a Humbler Form",
+      "summary": "COMMENTARY: What might St. Augustine’s ‘tranquility of order’ look like today?",
       "summary_basis": "媒体页面简介",
-      "display_language": "中文",
+      "display_language": "English",
       "translation_status": "original"
     },
     {
@@ -81,7 +96,7 @@
       "summary_basis": "平台话题速览",
       "source": "豚榜·小红书公开榜单聚合",
       "url": "https://www.xiaohongshu.com/search_result?keyword=%E7%94%A8%E4%B8%87%E8%83%BD%E6%97%85%E8%A1%8C%E6%8B%8D%E7%85%A7%E5%A7%BF%E5%8A%BF%E7%BE%8E%E7%BE%8E%E5%87%BA%E7%89%87",
-      "published_at": "2026-11-18T08:14:47.882732+00:00",
+      "published_at": "2026-11-18T21:07:49.166321+00:00",
       "score": 199
     },
     {
@@ -95,7 +110,7 @@
       "summary_basis": "平台话题速览",
       "source": "豚榜·小红书公开榜单聚合",
       "url": "https://www.xiaohongshu.com/search_result?keyword=%E8%80%97%E6%97%B6%E4%B8%89%E5%B9%B4%E6%8B%8D%E4%B8%8B%E5%8F%A4%E8%AF%97%E8%AF%8D%E9%87%8C%E7%9A%84%E4%B8%AD%E5%9B%BD",
-      "published_at": "2026-11-18T08:14:47.882732+00:00",
+      "published_at": "2026-11-18T21:07:49.166321+00:00",
       "score": 198
     },
     {
@@ -109,8 +124,23 @@
       "summary_basis": "平台话题速览",
       "source": "豚榜·小红书公开榜单聚合",
       "url": "https://www.xiaohongshu.com/search_result?keyword=%E6%88%91%E6%8B%8D%E5%88%B0%E4%BA%86%E6%B5%B7%E9%B8%A5%E9%9B%A8",
-      "published_at": "2026-11-18T08:14:47.882732+00:00",
+      "published_at": "2026-11-18T21:07:49.166321+00:00",
       "score": 197
+    },
+    {
+      "id": "d164ef2e69c0d76a",
+      "category": "sports",
+      "title": "Formula 1 Las Vegas Grand Prix streams live on Apple TV this weekend",
+      "original_language": "english",
+      "source": "macdailynews.com",
+      "url": "https://macdailynews.com/2026/11/17/formula-1-las-vegas-grand-prix-streams-live-on-apple-tv-this-weekend/",
+      "published_at": "2026-11-18T01:15:00+00:00",
+      "score": 125.57,
+      "headline": "Formula 1 Las Vegas Grand Prix streams live on Apple TV this weekend",
+      "summary": "Formula 1 returns to the U.S. this weekend for the Formula 1 Heineken Las Vegas Grand Prix 2026, streaming for free in the U.S. on Apple TV…",
+      "summary_basis": "媒体页面简介",
+      "display_language": "English",
+      "translation_status": "original"
     }
   ]
 }
