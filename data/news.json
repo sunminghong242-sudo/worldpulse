@@ -1,14 +1,14 @@
 {
   "version": 1,
   "status": "partial",
-  "updated_at": "2026-11-24T18:42:15+08:00",
-  "edition": "早报",
+  "updated_at": "2026-11-25T06:55:39+08:00",
+  "edition": "晚报",
   "timezone": "Asia/Hong_Kong",
   "notice": "部分新闻源未响应，报道可能不完整。",
   "methodology": "首页全球 7 篇、内地年轻人热点 3 篇，其他栏目各最多 3 篇。中文与英文原样显示；其他已识别语种翻译成简体中文，无法翻译的条目不显示。世界新闻来自 GDELT，摘要不编造未核实细节。",
-  "feed_successes": 4,
-  "feed_failures": 8,
-  "translation_failures": 1,
+  "feed_successes": 0,
+  "feed_failures": 12,
+  "translation_failures": 0,
   "items": [
     {
       "id": "4dd66bd34b264a2a",
@@ -21,51 +21,6 @@
       "score": 134.65,
       "headline": "UN Climate Summit Ends Without Agreement Over Fossil Fuel Language – NaturalNews . com",
       "summary": "The United Nations climate summit in Antalya, Turkey, ended Sunday without a final agreement, marking the first collapse of a UN climate conference si…",
-      "summary_basis": "媒体页面简介",
-      "display_language": "English",
-      "translation_status": "original"
-    },
-    {
-      "id": "c064f9cee0304364",
-      "category": "world",
-      "title": "史上时间最长联合国气候峰会 无果而终 ！ 中方 ： 深感失望 _ 东方财富网",
-      "original_language": "chinese",
-      "source": "finance.eastmoney.com",
-      "url": "https://finance.eastmoney.com/a/202611233937070738.html",
-      "published_at": "2026-11-23T02:30:00+00:00",
-      "score": 130.67,
-      "headline": "史上时间最长联合国气候峰会",
-      "summary": "《联合国气候变化框架公约》第三十一次缔约方大会(COP31)在延期两天后于当地时间11月22日闭幕。在经历了长达两周的马拉松式谈判，会议依然未能就政治决定达成一致。本次大会本应于11月20日结束，却在延期磋商下成为史上耗时最长的一届。",
-      "summary_basis": "媒体页面简介",
-      "display_language": "中文",
-      "translation_status": "original"
-    },
-    {
-      "id": "45be78f0b98d902e",
-      "category": "world",
-      "title": "一週大事 ／ 普發2萬三讀通過 美中俄元首會晤 （ 2026 . 11 . 16 - 11 . 22 ） ｜ 公視新聞 PNN",
-      "original_language": "chinese",
-      "source": "news.pts.org.tw",
-      "url": "https://news.pts.org.tw/article/836808",
-      "published_at": "2026-11-22T12:30:00+00:00",
-      "score": 129.6,
-      "headline": "一週大事 ／ 普發2萬三讀通過",
-      "summary": "《公視新聞網》為您精選一週國內外大事，關注焦點包括：普發2萬三讀通過、老農津貼不副署、金管會祭限空令3.0、APEC峰會、育兒職場3大補助、美中俄元首會晤、COP31延長談判。",
-      "summary_basis": "媒体页面简介",
-      "display_language": "中文",
-      "translation_status": "original"
-    },
-    {
-      "id": "eb9790af626f9fad",
-      "category": "world",
-      "title": "Climate change talks fall apart in final hours over fossil fuels",
-      "original_language": "english",
-      "source": "capeandislands.org",
-      "url": "https://www.capeandislands.org/2026-11-22/climate-change-talks-fall-apart-in-final-hours-over-fossil-fuels",
-      "published_at": "2026-11-22T22:30:00+00:00",
-      "score": 120.13,
-      "headline": "Climate change talks fall apart in final hours over fossil fuels",
-      "summary": "Some 200 countries gathered in Antalya, Turkey, for COP31, the annual climate negotiations.",
       "summary_basis": "媒体页面简介",
       "display_language": "English",
       "translation_status": "original"
@@ -86,21 +41,6 @@
       "translation_status": "original"
     },
     {
-      "id": "111e16d408af47c5",
-      "category": "world",
-      "title": "​COP31 Climate Summit in Turkey Ends Without Agreement as Deal Collapses ; EU Accuses Oil - Producing States of Hijacking Talks - Pragativadi I Latest Odisha News in English I Breaking News",
-      "original_language": "english",
-      "source": "pragativadi.com",
-      "url": "https://pragativadi.com/cop31-climate-summit-in-turkey-ends-without-agreement-as-deal-collapses-eu-accuses-oil-producing-states-of-hijacking-talks/",
-      "published_at": "2026-11-22T16:30:00+00:00",
-      "score": 116.93,
-      "headline": "​COP31 Climate Summit in Turkey Ends Without Agreement as Deal Collapses",
-      "summary": "​COP31 Climate Summit in Turkey Ends Without Agreement as Deal Collapses; EU Accuses Oil-Producing States of ‘Hijacking’ Talks",
-      "summary_basis": "媒体页面简介",
-      "display_language": "English",
-      "translation_status": "original"
-    },
-    {
       "id": "3c2d86fe20c15720",
       "category": "youth",
       "platform": "小红书",
@@ -111,7 +51,7 @@
       "summary_basis": "平台话题速览",
       "source": "豚榜·小红书公开榜单聚合",
       "url": "https://www.xiaohongshu.com/search_result?keyword=%E7%94%A8%E4%B8%87%E8%83%BD%E6%97%85%E8%A1%8C%E6%8B%8D%E7%85%A7%E5%A7%BF%E5%8A%BF%E7%BE%8E%E7%BE%8E%E5%87%BA%E7%89%87",
-      "published_at": "2026-11-24T10:42:15.801010+00:00",
+      "published_at": "2026-11-24T22:55:39.462258+00:00",
       "score": 199
     },
     {
@@ -125,7 +65,7 @@
       "summary_basis": "平台话题速览",
       "source": "豚榜·小红书公开榜单聚合",
       "url": "https://www.xiaohongshu.com/search_result?keyword=%E8%80%97%E6%97%B6%E4%B8%89%E5%B9%B4%E6%8B%8D%E4%B8%8B%E5%8F%A4%E8%AF%97%E8%AF%8D%E9%87%8C%E7%9A%84%E4%B8%AD%E5%9B%BD",
-      "published_at": "2026-11-24T10:42:15.801010+00:00",
+      "published_at": "2026-11-24T22:55:39.462258+00:00",
       "score": 198
     },
     {
@@ -139,7 +79,7 @@
       "summary_basis": "平台话题速览",
       "source": "豚榜·小红书公开榜单聚合",
       "url": "https://www.xiaohongshu.com/search_result?keyword=%E6%88%91%E6%8B%8D%E5%88%B0%E4%BA%86%E6%B5%B7%E9%B8%A5%E9%9B%A8",
-      "published_at": "2026-11-24T10:42:15.801010+00:00",
+      "published_at": "2026-11-24T22:55:39.462258+00:00",
       "score": 197
     },
     {
